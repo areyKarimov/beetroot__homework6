@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #2a2a2a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.header {
+    height: 100vh;
+    width: 100vw;
+    background: #464f54;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.header__title {
+    position: absolute;
+    background: #181818;
+    width: 70%;
+    right: 0;
+    top: 50px;
+    min-height: 190px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #282828;
+}
+
+.header__subtitle {
+    font-family: 'Proxima Nova Rg';
+    font-size: 15px;
+    color: #767676;
+    letter-spacing: 0.3em;
+}
+
+.header__maintitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #fefefe;
+    position: relative;
+}
+
+.header__maintitle::after {
+    content: '';
+    height: 37px;
+    width: 1px;
+    background: #fff;
+    position: absolute;
+    right: -6px;
+    bottom: 6px;
+}
+
+.menu {
+    position: absolute;
+    bottom: -80px;
+    height: 80px;
+    width: 90%;
+    background: #f5bb2c;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu img {
+    opacity: 0.5;
+    margin-left: 25px;
+    transition: opacity 0.5s ease;
+}
+
+.menu img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.article {
+    -webkit-box-shadow: 0px 1px 35px 4px rgba(29, 32, 33, 1);
+    -moz-box-shadow: 0px 1px 35px 4px rgba(29, 32, 33, 1);
+    box-shadow: 0px 1px 35px 4px rgba(29, 32, 33, 1);
+    background: #fff;
+    max-width: 1060px;
+    height: 80%;
+    padding: 200px 125px 40px;
+}
+
+.article__date {
+    color: #b4b4b4;
+    font-family: 'Proxima Nova Rg';
+    font-size: 15px;
+    letter-spacing: 0.3em;
+}
+
+.article__title {
+    letter-spacing: 0.1em;
+    font-family: 'Futura PT';
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.article__caption {
+    font-size: 24px;
+    font-style: italic;
+    color: #8f8f8f;
+}
+
+.article__text {
+    margin-top: 30px;
+}
+
+.article__p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+
+/* font-family: 'Georgia'; */
+
+
+/* font-family: 'Futura PT'; */
+
+
+/* font-family: 'Proxima Nova Rg'; */
+
+
+/* font-family: 'Playfair Display', serif; */
