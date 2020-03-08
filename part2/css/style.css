@@ -44,6 +44,7 @@ button {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    z-index: 1;
     flex-direction: column;
 }
 
@@ -84,22 +85,42 @@ button {
 
 .menu {
     position: absolute;
-    bottom: -80px;
-    height: 80px;
+    bottom: 0px;
+    height: 3px;
     width: 90%;
     background: #f5bb2c;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    transition: 0.5s ease;
 }
 
 .menu img {
-    opacity: 0.5;
+    opacity: 0;
     margin-left: 25px;
-    transition: opacity 0.5s ease;
+    transition: 0.5s;
 }
 
-.menu img:hover {
+.header__title:hover .menu {
+    height: 80px;
+    bottom: -80px;
+}
+
+.header__title:hover .menu img {
+    opacity: 0.5;
+}
+
+.menu:hover {
+    height: 80px;
+    bottom: -80px;
+}
+
+.menu:hover img {
+    display: unset;
+    opacity: 0.5;
+}
+
+.header .menu img:hover {
     opacity: 1;
     cursor: pointer;
 }
@@ -112,6 +133,17 @@ button {
     max-width: 1060px;
     height: 80%;
     padding: 200px 125px 40px;
+    position: relative;
+}
+
+.article::before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: #e8eced;
+    left: 60px;
+    top: 0;
+    position: absolute;
 }
 
 .article__date {
